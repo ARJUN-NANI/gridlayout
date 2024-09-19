@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 80vw;
+            height: 80vh;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5px;
+            display: grid;
+        }
+        .grid{
+            width: 26vw;
+            height: 26vh;
+            background-color: darkgray;
+            display: grid;
+            gap: 5px;
+            padding: 5px;
+            grid-template-columns:1fr 1fr 1fr;
+        }
+        .item1{
+            background-color: red;
+        }
+        .item2{
+            background-color: orange;
+        }
+        .item3{
+            background-color: yellow;
+        }
+        .item4{
+            background-color: darkcyan;
+        }
+        .item5{
+            background-color: darkgreen;
+        }
+        .item6{
+            background-color: greenyellow;
+        }
+        .grid1{
+            width: 26vw;
+            height: 26vh;
+            background-color: darkgray;
+            display: grid;
+            gap: 5px;
+            padding: 5px;
+            grid-template-columns:1fr 1fr 1fr;
+        }
+        .item7{
+            background-color: brown;
+            grid-column: 1/3;
+        }
+        .item8{
+            background-color: orange;
+            grid-row: 1/3;
+            grid-column: 3;
+        }
+        .item9{
+            background-color: aqua;
+        }
+        .item10{
+            background-color: cadetblue;
+        }
+        .item11{
+            background-color: orange;
+            grid-column: 1/4;
+        }
+        .item12{
+            background-color: darkcyan;
+        }
+        .item13{
+            background-color: red;
+            grid-column: 2/4;
+
+        }
+        .item14{
+            background-color: aquamarine;
+            grid-column: 1/4;
+        }
+        .grid2{
+            width: 26vw;
+            height: 26vh;
+            background-color: darkgray;
+            display: grid;
+            gap: 5px;
+            padding: 5px;
+            grid-template-columns:1fr 1fr 1fr 1fr;
+        }
+        .itema{
+            background-color: orange;
+            grid-column: 1/3;
+        }
+        .itemb{
+            background-color: red;
+            grid-column: 3/5;
+        }
+        .itemc{
+            background-color: aquamarine;
+        }
+        .itemd{
+            background-color: darkmagenta;
+            grid-column: 2/5;
+        }
+        .iteme{
+            background-color: darkorange;
+            grid-column: 1/5;
+        }
+        .grid3{
+            width: 26vw;
+            height: 26vh;
+            background-color: darkgray;
+            display: grid;
+            gap: 5px;
+            padding: 5px;
+            grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;}
+        
+        .a{ background-color: green;}
+        .b{background-color: orange;}
+        .c{background-color: antiquewhite;}
+        .d{background-color: aqua;}
+        .e{background-color: blue;}
+        .f{background-color: blueviolet;}
+        .g{background-color: yellowgreen;}
+        .h{background-color: yellow;}
+        .i{background-color: violet;}
+        .j{background-color: turquoise;}
+        .k{background-color: tomato;}
+        .l{background-color: steelblue;}
+        .m{background-color: springgreen;}
+        .n{background-color: slateblue;}
+        .o{background-color: skyblue;}
+        .p{background-color: sienna;}
+        .q{background-color: seagreen;}
+        .r{background-color: sandybrown;}
+    
+        
+        .A{
+            background-color: red;
+            grid-column: 1/3;
+        }
+        .B{background-color: antiquewhite;}
+        .C{background-color: brown;}
+        .D{background-color: blueviolet;}
+        .E{background-color: burlywood;}
+        .F{background-color: chartreuse;}
+        .G{
+            background-color: chocolate;
+            grid-row: 3/5;
+            grid-column: 1/3;
+        }
+        .H{background-color: coral;
+        grid-row: 3;}
+        .I{background-color: cornflowerblue;
+        grid-row: 3;}
+        .J{
+            background-color: darkblue;
+            grid-row: 4;
+        }
+        .K{
+            background-color: yellow;
+            grid-row: 5;
+            grid-column: 1/4;
+        }
+        .L{background-color: turquoise;
+        grid-row: 5;} 
+        .grid3{
+            width: 26vw;
+            height: 26vh;
+            background-color: darkgray;
+            display: grid;
+            gap: 5px;
+            padding: 5px;
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(3,1fr);
+        }
+        .a1{
+            background-color: aqua;
+            grid-column: 1/3;
+        }
+        .a2{
+            background-color: blueviolet;
+            grid-column: 3/5;
+        }
+        .a3{
+            background-color: brown;
+            grid-row: 2/4;
+            grid-column: 1/3;
+        }
+        .a4{
+            background-color: aquamarine;
+            grid-row: 2/4;
+            grid-column: 3/5;
+        }
+        .a5{
+            background-color: rgb(154, 184, 81);
+            grid-column: 3/5;
+            grid-row: 2;
+        }
+        .a6{
+            background-color: violet;
+            grid-row: 3;
+            grid-column: 3;
+        }
+        .a7{
+            background-color: springgreen;
+            grid-row: 3;
+            grid-column: 4;
+        }
+        .grid4{
+            width: 26vw;
+            height: 26vh;
+            background-color: darkgray;
+            display: grid;
+            gap: 5px;
+            padding: 5px;
+            grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(3,1fr);
+        }
+        .b1{background-color: aqua;}
+        .b2{background-color: blanchedalmond;}
+        .b3{background-color: blueviolet;}
+        .b4{background-color: yellow;}
+        .b5{background-color: wheat;}
+        .b6{background-color: violet;}
+        .b7{background-color: tomato;}
+        .b8{background-color: orange;
+        grid-column: 3/6;}
+        .b9{background-color: chartreuse;
+        grid-column: 1/6;}
+
+        .c1{background-color: orange;
+        grid-column: 1/4;}
+        .c2{background-color: darkcyan;
+        grid-row: 2/4;}
+        .c3{background-color: aquamarine;
+        grid-column: 2/4;}
+        .c4{background-color: red;}
+        .c5{background-color: orange;}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="grid">
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+            <div class="item item4"></div>
+            <div class="item item5"></div>
+            <div class="item item6"></div>
+        </div>
+        <div class="grid1">
+            <div class="item item7"></div>
+            <div class="item item8"></div>
+            <div class="item item9"></div>
+            <div class="item item10"></div>
+        </div>
+        <div class="grid1">
+            <div class="item item11"></div>
+            <div class="item item12"></div>
+            <div class="item item13"></div>
+            <div class="item item14"></div>
+        </div>
+        <div class="grid2">
+            <div class="item itema"></div>
+            <div class="item itemb"></div>
+            <div class="item itemc"></div>
+            <div class="item itemd"></div>
+            <div class="item iteme"></div>
+        </div>
+        <div class="grid3">
+            <div class="item a"></div>
+            <div class="item b"></div>
+            <div class="item c"></div>
+            <div class="item d"></div>
+            <div class="item e"></div>
+            <div class="item f"></div>
+            <div class="item g"></div>
+            <div class="item h"></div>
+            <div class="item i"></div>
+            <div class="item j"></div>
+            <div class="item k"></div>
+            <div class="item l"></div>
+            <div class="item m"></div>
+            <div class="item n"></div>
+            <div class="item o"></div>
+            <div class="item p"></div>
+            <div class="item q"></div>
+            <div class="item r"></div>
+        </div>
+        <div class="grid2">
+            <div class="item A"></div>
+            <div class="item B"></div>
+            <div class="item C"></div>
+            <div class="item D"></div>
+            <div class="item E"></div>
+            <div class="item F"></div>
+            <div class="item G"></div>
+            <div class="item H"></div>
+            <div class="item I"></div>
+            <div class="item J"></div>
+            <div class="item K"></div>
+            <div class="item L"></div>
+        </div>
+        <div class="grid2">
+            <div class="item a1"></div>
+            <div class="item a2"></div>
+            <div class="item a3"></div>
+            <div class="item a4"></div>
+            <div class="item a5"></div>
+            <div class="item a6"></div>
+            <div class="item a7"></div>
+        </div>
+        <div class="grid4">
+            <div class="item b1"></div>
+            <div class="item b2"></div>
+            <div class="item b3"></div>
+            <div class="item b4"></div>
+            <div class="item b5"></div>
+            <div class="item b6"></div>
+            <div class="item b7"></div>
+            <div class="item b8"></div>
+            <div class="item b9"></div>
+        </div>
+        <div class="grid">
+        <div class="item c1"></div>
+        <div class="item c2"></div>
+        <div class="item c3"></div>
+        <div class="item c4"></div>
+        <div class="item c5"></div></div>
+    </div>
+</body>
+</html>
